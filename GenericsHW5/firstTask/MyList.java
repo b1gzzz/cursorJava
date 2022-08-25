@@ -8,23 +8,23 @@ public class MyList<T extends Number> {
         private final List<T> list = new ArrayList<>();
 
         public void add(T a) {
-            list.add(0,a);
+            list.add(a);
         }
 
         public T getGreatest() {
             T greater = list.get(0);
             for (int i = 0; i < list.size(); i++) {
-                if (list.get(i).floatValue() > greater.floatValue()) {
+                if (list.get(i).doubleValue() > greater.doubleValue()) {
                     greater = list.get(i);
                 }
             }
-        return greater;
+            return greater;
         }
 
         public T getSmallest() {
             T smallest = list.get(0);
             for (int i = 0; i < list.size(); i++) {
-                if (list.get(i).floatValue() < smallest.floatValue()) {
+                if (list.get(i).doubleValue() < smallest.doubleValue()) {
                     smallest = list.get(i);
                 }
             }

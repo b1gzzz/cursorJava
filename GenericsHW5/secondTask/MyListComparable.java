@@ -8,7 +8,7 @@ public class MyListComparable<T extends Comparable<T>> {
         public List<T> list = new ArrayList<>();
 
         public void add(T a) {
-            list.add(0, a);
+            list.add(a);
         }
 
         public T getGreatest() {
