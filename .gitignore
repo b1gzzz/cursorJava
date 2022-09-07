@@ -13,3 +13,6 @@ cursorJava.iml
 .DS_Store
 Alliance_barracks/.DS_Store
 projects/src/.DS_Store
+*.xml
+*.class
+HW11/src/main/java/ArabicNumber.java
